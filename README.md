@@ -9,9 +9,9 @@ El programa toma el comando ingresado por el usuario como una cadena de caracter
 El programa toma como función principal getCommand que es la encargada de crear al proceso padre e hijo, que se encarga de redirigir (si es necesario) hacia otras funciones para la aplicación de las distintas funcionalidades. Las funcionalidades del programa son:
 
 1. Ejecución de comandos en el proceso hijo 
-2. item Historial que de los comandos en ejecución que se guarda en un txt, acepta de igual forma los !! para ejecutar último comando
-3. item Redirecciones tanto de <  como de >
-4. item Comunicación de 2 procesos via pipe
+2. Historial que de los comandos en ejecución que se guarda en un txt, acepta de igual forma los !! para ejecutar último comando
+3. Redirecciones tanto de <  como de >
+4. Comunicación de 2 procesos via pipe
 
 
 Todos los comandos son ejecutados por medio de execv, el "caso base" son los comandos básicos tales como ls, ps, cat, echo, etc. También cuenta con control de errores en caso de que el comando ingresado sea erróneo. Los comandos erróneos también son agregados al historial.
